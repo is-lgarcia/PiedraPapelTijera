@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo1"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btn_player_peidra"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_player_papel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/piedra"
+        android:onClick="onClickPiedra"/>
+
+    <ImageButton
+        android:id="@+id/btn_player_papel"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_player_peidra"
+        app:srcCompat="@drawable/papel"
+        android:onClick="onClickPapel"/>
+
+    <ImageButton
+        android:id="@+id/btn_player_tijera"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/btn_player_peidra"
+        app:layout_constraintEnd_toEndOf="@+id/btn_player_papel"
+        app:srcCompat="@drawable/tijera"
+        android:onClick="onClickTijera"/>
+
+    <ImageView
+        android:id="@+id/imagen_tijera_p"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="120dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintVertical_bias="0.364"
+        app:srcCompat="@drawable/tijera" />
+
+    <ImageView
+        android:id="@+id/imagen_papel_p"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="120dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/imagen_piedra_p"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="120dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/piedra" />
+
+    <TextView
+        android:id="@+id/txt_puntaje_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:text="@string/txt_example_player"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_puntaje_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/app_name"
+        android:text="@string/txt_example_phone"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagen_piedra_phone"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="120dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361"
+        app:srcCompat="@drawable/piedra" />
+
+    <ImageView
+        android:id="@+id/imagen_papel_phone"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="120dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/imagen_tijera_p_phone"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="120dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361"
+        app:srcCompat="@drawable/tijera" />
+
+    <TextView
+        android:id="@+id/txt_ganador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
